@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Moon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="img2/loguitooo.jpeg">
+
+    <!-- FUENTE GOOGLE FONTS : Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- ICONS: Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- ICONS: Line Awesome -->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+</head>
+<header>
+<!-- =================================
+           HEADER MENU
+        ==================================--->
+        <div class="hm">
+            <div class="container1">
+                <div class="der-menu">
+                     <nav class="hmm-menu">
+                        <ul>
+                            <li><a href="/index.html">Inicio</a></li>
+                            <li><a href="catalogo.html" >Catalogo</a></li>
+                            <li><a href="/nosotros.html">Nosotros</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+    <!--header- menu-->
+    <div class="main-header">
+        <div class="container  container__flex">
+            <div class="main-header__container">
+                <center><h1 class="main-header__title"><img src="img2/logo.jpg"></h1></center>
+                <span class="icon-menu " id="btn-menu"><i class="fa-solid fa-bars"></i></span>
+                <nav class="main-nav" id="main-nav">
+                    <ul class="menu">
+                        <li class="menu__item"><a href="#section-products1" class="menu__link">VESTIDOS</a></li>
+                        <li class="menu__item"><a href="#section-products2" class="menu__link">JUMPERS</a></li>
+                        <li class="menu__item"><a href="#section-products3" class="menu__link">CALZADO</a></li>
+                        <li class="menu__item"><a href="#section-products4" class="menu__link">ACCESORIOS</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="main-header__container">
+                <input type="search" class="main-header__input"><i class="fa-solid fa-magnifying-glass"></i>
+                <center><a href="#" id="btnCompra"  class="main-header__btn" >Mi compra <i class="fa-solid fa-cart-shopping" ></i></a></center>
+                <div class="carrito" id="miCompra">
+                    <table id="lista-carrito">
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                </div>     
+            </div>
+        </div>
+    </div>
+    </header>
+        <body>
+         <!--slider--
+    
+    <div class="container-slider">
+        <div class="slider" id="slider">
+            <div class="slider__section">
+                <img src="img2/1.jpeg" alt="modelo en traje de bikini negro" class="slider__img">
+                <div class="slider__content">
+                    <h2 class="slider__title">Tendencia 2023-2024</h2>
+                    <p class="slider__txt">Descuento Verano 30%</p>
+                    <a href="#compra-ahora" class="slider__link">COMPRAR AHORA</a>
+                </div>
+            </div>
+            <div class="slider__section">
+                <img src="img2/2.jpeg" alt="modelo en traje musculosa floreada" class="slider__img">
+                <div class="slider__content">
+                    <h2 class="slider__title">Todos las tallas disponibles</h2>
+                    <p class="slider__txt">Descuento Otoño 30%</p>
+                    <a href="#compra-ahora" class="slider__link">COMPRAR AHORA</a>
+                </div>
+            </div>
+            <div class="slider__section">
+                <img src="img2/2.jpeg" alt="modelo en traje musculosa floreada" class="slider__img">
+                <div class="slider__content">
+                    <h2 class="slider__title">Todos las tallas disponibles</h2>
+                    <p class="slider__txt">Descuento Otoño 30%</p>
+                    <a href="#compra-ahora" class="slider__link">COMPRAR AHORA</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider__btn slider__btn-right" id="btn-right">&#62</div>
+        <div class="slider__btn slider__btn-left" id="btn-left">&#60</div>
+    </div>-->
+    
+    <!--Shop-Products-->
+    <main class="main" id="compra-ahora">
+        <div class="container" id="lista-compras">
+            <!--Vestidos-->
+
+            <div class="header-title">
+                <h1  class="main-title" id="section-products1" data-aos="fade-up" data-aos-duration="3000">VESTIDOS</h1>
+            </div>
+            
+            <section class="container-products" >
+                <div class="product">
+                    <img class="product__img" src="img2/vestidos/PASTELITO.jpg" alt="remera algodon blanca estampa perro">
+                    <div class="product__description">
+                        <h3 class="product__title">PASTELITO</h3>
+                        <span class="product__price">S/. 105.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus agregar-carrito" data-id="1"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/vestidos/CAMILLE.jpg" alt="remara blanca auto">
+                    <div class="product__description">
+                        <h3 class="product__title">CAMILLE</h3>
+                        <span class="product__price">S/. 99.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus" data-id="2"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/vestidos/ELCIRA.jpg" alt="remara blanca auto">
+                    <div class="product__description">
+                        <h3 class="product__title">ELCIRA</h3>
+                        <span class="product__price">S/. 85.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus" data-id="3"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/vestidos/ADRIANA.jpg" alt="Remera hombre navada">
+                    <div class="product__description">
+                        <h3 class="product__title">ADRIANA</h3>
+                        <span class="product__price">S/. 95.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus" data-id="4"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/vestidos/AURELIA.jpg" alt="Remera blaca Nirvana">
+                    <div class="product__description">
+                        <h3 class="product__title">AURELIA</h3>
+                        <span class="product__price">S/. 119.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus" data-id="5"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/vestidos/CANDY.jpg" alt="remera negra estampa vampira">
+                    <div class="product__description">
+                        <h3 class="product__title">CANDY</h3>
+                        <span class="product__price">S/. 80.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus" data-id="6"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/vestidos/CAROLINE.jpg" alt="remera negra sistema solar">
+                    <div class="product__description">
+                        <h3 class="product__title">CAROLINE</h3>
+                        <span class="product__price">S/. 85.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus" data-id="7"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/vestidos/CELY.jpg" alt="remeron nevada">
+                    <div class="product__description">
+                        <h3 class="product__title">CELY</h3>
+                        <span class="product__price">S/. 66.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus " data-id="8"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/vestidos/CLAUDIA.jpg" alt="Remera blaca Nirvana">
+                    <div class="product__description">
+                        <h3 class="product__title">CLAUDIA</h3>
+                        <span class="product__price">S/. 77.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus" data-id="9"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/vestidos/CUADROS.jpg" alt="remera negra estampa vampira">
+                    <div class="product__description">
+                        <h3 class="product__title">CUADROS</h3>
+                        <span class="product__price">S/. 66.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus" data-id="10"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/vestidos/ADA.jpg" alt="remera negra sistema solar">
+                    <div class="product__description">
+                        <h3 class="product__title">ADA</h3>
+                        <span class="product__price">S/. 81.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus" data-id="11"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/vestidos/ELENA.jpg" alt="remeron nevada">
+                    <div class="product__description">
+                        <h3 class="product__title">ELENA</h3>
+                        <span class="product__price">S/. 81.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus " data-id="12"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/vestidos/ELSA.jpg" alt="Remera blaca Nirvana">
+                    <div class="product__description">
+                        <h3 class="product__title">ELSA</h3>
+                        <span class="product__price">S/. 85.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus" data-id="13"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/vestidos/GABRIELA.jpg" alt="remera negra estampa vampira">
+                    <div class="product__description">
+                        <h3 class="product__title">GABRIELA</h3>
+                        <span class="product__price">S/. 85.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus" data-id="14"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/vestidos/GEMINIS.jpg" alt="remera negra sistema solar">
+                    <div class="product__description">
+                        <h3 class="product__title">GEMINIS</h3>
+                        <span class="product__price">S/. 75.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus" data-id="15"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/vestidos/JIMENA.jpg" alt="remeron nevada">
+                    <div class="product__description">
+                        <h3 class="product__title">JIMENA</h3>
+                        <span class="product__price">S/. 67.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus " data-id="16"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/vestidos/LADY.jpg" alt="Remera blaca Nirvana">
+                    <div class="product__description">
+                        <h3 class="product__title">LADY</h3>
+                        <span class="product__price">S/. 85.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus" data-id="17"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/vestidos/LIDIA.jpg" alt="remera negra estampa vampira">
+                    <div class="product__description">
+                        <h3 class="product__title">LIDIA</h3>
+                        <span class="product__price">S/. 99.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus" data-id="18"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/vestidos/PRINCESA.jpg" alt="remera negra sistema solar">
+                    <div class="product__description">
+                        <h3 class="product__title">PRINCESA</h3>
+                        <span class="product__price">S/. 109.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus" data-id="19"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/vestidos/RITA.jpg" alt="remeron nevada">
+                    <div class="product__description">
+                        <h3 class="product__title">RITA</h3>
+                        <span class="product__price">S/. 83.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus " data-id="20"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/vestidos/SANDRA.jpg" alt="Remera blaca Nirvana">
+                    <div class="product__description">
+                        <h3 class="product__title">SANDRA</h3>
+                        <span class="product__price">S/. 77.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus" data-id="21"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/vestidos/TAMARA.jpg" alt="remera negra estampa vampira">
+                    <div class="product__description">
+                        <h3 class="product__title">TAMARA</h3>
+                        <span class="product__price">S/. 85.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus" data-id="22"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/vestidos/VALERIA.jpg" alt="remera negra sistema solar">
+                    <div class="product__description">
+                        <h3 class="product__title">VALERIA</h3>
+                        <span class="product__price">S/. 85.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus" data-id="23"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/vestidos/VERA.jpg" alt="remeron nevada">
+                    <div class="product__description">
+                        <h3 class="product__title">VERA</h3>
+                        <span class="product__price">S/. 87.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus " data-id="24"></i>
+                </div>
+            </section>
+            <div class="container-editor">
+                <div class="editor__item">
+                    <img src="img2/vestidos/ELCIRA.jpg" alt="remera culprit" class="editor__img">
+                    <p class="editor__circle">Expresa tu estilo</p>
+                </div>
+                <div class="editor__item">
+                    <img src="img2/vestidos/ADRIANA.jpg" alt="remera blanca con puntos negros" class="editor__img">
+                    <p class="editor__circle">Expresa tu estilo</p>
+                </div>
+            </div>
+        
+        
+            <!--Jumpers-->
+            <div class="header-title">
+                <h1  class="main-title" id="section-products2" data-aos="fade-up" data-aos-duration="3000">JUMPERS</h1>
+            </div>
+            <section class="container-products">
+                <div class="product">
+                    <img class="product__img" src="img2/jumpers/LUCIA.jpg" alt="remera algodon blanca estampa perro">
+                    <div class="product__description">
+                        <h3 class="product__title">LUCIA</h3>
+                        <span class="product__price">S/. 77.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus agregar-carrito" data-id="25"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/jumpers/LISA.jpg" alt="remara blanca auto">
+                    <div class="product__description">
+                        <h3 class="product__title">LISA</h3>
+                        <span class="product__price">S/. 79.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus" data-id="26"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/jumpers/DARLET.jpg" alt="remara blanca auto">
+                    <div class="product__description">
+                        <h3 class="product__title">DARLET</h3>
+                        <span class="product__price">S/. 80.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus" data-id="27"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/jumpers/ROMY.jpg" alt="remara blanca auto">
+                    <div class="product__description">
+                        <h3 class="product__title">ROMY</h3>
+                        <span class="product__price">S/. 85.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus" data-id="28"></i>
+                </div>
+            </section>
+            <div class="container-editor">
+                <div class="editor__item">
+                    <img src="img2/jumpers/ROMY.jpg" alt="remera culprit" class="editor__img">
+                    <p class="editor__circle">Expresa tu estilo</p>
+                </div>
+                <div class="editor__item">
+                    <img src="img2/jumpers/LUCIA.jpg" alt="remera blanca con puntos negros" class="editor__img">
+                    <p class="editor__circle">Expresa tu estilo</p>
+                </div>
+            </div>
+            <!--Calzado-->
+            <div class="header-title">
+                <h1  class="main-title" id="section-products3" data-aos="fade-up" data-aos-duration="3000">CALZADO</h1>
+            </div>
+            <section class="container-products">
+                <div class="product">
+                    <img class="product__img" src="img2/calzado/1.jpg" alt="remera algodon blanca estampa perro">
+                    <div class="product__description">
+                        <h3 class="product__title">Isabella</h3>
+                        <span class="product__price">S/. 65.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus agregar-carrito" data-id="29"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/calzado/2.jpg" alt="remara blanca auto">
+                    <div class="product__description">
+                        <h3 class="product__title">Valentina</h3>
+                        <span class="product__price">S/. 70.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus" data-id="30"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/calzado/3.jpg" alt="remara blanca auto">
+                    <div class="product__description">
+                        <h3 class="product__title">Sofia</h3>
+                        <span class="product__price">S/. 88.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus" data-id="31"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/calzado/4.jpg" alt="Remera hombre navada">
+                    <div class="product__description">
+                        <h3 class="product__title">Carmen</h3>
+                        <span class="product__price">S/. 75.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus" data-id="32"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/calzado/5.jpg" alt="Remera blaca Nirvana">
+                    <div class="product__description">
+                        <h3 class="product__title">Natalia</h3>
+                        <span class="product__price">S/. 78.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus" data-id="33"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/calzado/6.jpg" alt="remera negra estampa vampira">
+                    <div class="product__description">
+                        <h3 class="product__title">Olivia</h3>
+                        <span class="product__price">S/. 80.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus" data-id="34"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/calzado/7.jpg" alt="remera negra sistema solar">
+                    <div class="product__description">
+                        <h3 class="product__title">Camila</h3>
+                        <span class="product__price">S/. 100.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus" data-id="35"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/calzado/8.jpg" alt="remeron nevada">
+                    <div class="product__description">
+                        <h3 class="product__title">Victoria</h3>
+                        <span class="product__price">S/. 88.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus " data-id="36"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/calzado/9.jpg" alt="Remera blaca Nirvana">
+                    <div class="product__description">
+                        <h3 class="product__title">Emilia</h3>
+                        <span class="product__price">S/. 80.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus" data-id="37"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/calzado/10.jpg" alt="remera negra estampa vampira">
+                    <div class="product__description">
+                        <h3 class="product__title">Aurora</h3>
+                        <span class="product__price">S/. 82.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus" data-id="38"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/calzado/11.jpg" alt="remera negra sistema solar">
+                    <div class="product__description">
+                        <h3 class="product__title">Paloma</h3>
+                        <span class="product__price">S/. 95.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus" data-id="39"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/calzado/12.jpg" alt="remeron nevada">
+                    <div class="product__description">
+                        <h3 class="product__title">Elizabeth</h3>
+                        <span class="product__price">S/. 75.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus " data-id="40"></i>
+                </div>
+            </section>
+            <div class="container-editor">
+                <div class="editor__item">
+                    <img src="img2/calzado/8.jpg" alt="remera culprit" class="editor__img">
+                    <p class="editor__circle">Expresa tu estilo</p>
+                </div>
+                <div class="editor__item">
+                    <img src="img2/calzado/3.jpg" alt="remera blanca con puntos negros" class="editor__img">
+                    <p class="editor__circle">Expresa tu estilo</p>
+                </div>
+            </div>
+            <!--Accesorios-->
+            <div class="header-title">
+                <h1  class="main-title" id="section-products4" data-aos="fade-up" data-aos-duration="3000">ACCESORIOS</h1>
+            </div>
+            <section class="container-products">
+                <div class="product">
+                    <img class="product__img" src="img2/accesorios/ARETES.jpg" alt="remera algodon blanca estampa perro">
+                    <div class="product__description">
+                        <h3 class="product__title">Aretes</h3>
+                        <span class="product__price">S/. 12.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus agregar-carrito" data-id="41"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/accesorios/CARTERA.jpg" alt="remara blanca auto">
+                    <div class="product__description">
+                        <h3 class="product__title">Cartera</h3>
+                        <span class="product__price">S/. 55.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus" data-id="42"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/accesorios/GAFAS.jpg" alt="remara blanca auto">
+                    <div class="product__description">
+                        <h3 class="product__title">Gafas</h3>
+                        <span class="product__price">S/. 15.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus" data-id="43"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/accesorios/GANCHOS.jpg" alt="Remera hombre navada">
+                    <div class="product__description">
+                        <h3 class="product__title">Ganchos</h3>
+                        <span class="product__price">S/. 7.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus" data-id="44"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/accesorios/JOYERIA.jpg" alt="Remera blaca Nirvana">
+                    <div class="product__description">
+                        <h3 class="product__title">Joyeria</h3>
+                        <span class="product__price">S/. 20.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus" data-id="45"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/accesorios/PLANETAS.jpg" alt="remera negra estampa vampira">
+                    <div class="product__description">
+                        <h3 class="product__title">Collares</h3>
+                        <span class="product__price">S/. 30.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus" data-id="46"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/accesorios/TOBILLERAS.png" alt="remera negra sistema solar">
+                    <div class="product__description">
+                        <h3 class="product__title">Tobilleras</h3>
+                        <span class="product__price">S/. 15.00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus" data-id="47"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img2/accesorios/VINCHAS.jpg" alt="remeron nevada">
+                    <div class="product__description">
+                        <h3 class="product__title">Vinchas</h3>
+                        <span class="product__price">S/. 10 .00</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus " data-id="48"></i>
+                </div>
+            </section>
+            <div class="container-editor">
+                <div class="editor__item">
+                    <img src="img2/accesorios/GANCHOS.jpg" alt="remera culprit" class="editor__img">
+                    <p class="editor__circle">Expresa tu estilo</p>
+                </div>
+                <div class="editor__item">
+                    <img src="img2/accesorios/JOYERIA.jpg" alt="remera blanca con puntos negros" class="editor__img">
+                    <p class="editor__circle">Expresa tu estilo</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.facebook.com/danmamoonbyliad?mibextid=ZbWKwL" class="icon"><i class="fa-brands fa-facebook redes" ></i></a>
+            <a href="https://instagram.com/danmamoonbyliad?igshid=YmMyMTA2M2Y=" class="icon"><i class="fa-brands fa-instagram redes"></i></a>
+            <a href="https://www.tiktok.com/@danmamoon?_t=8bY0ffg2tpW&_r=1" class="icon"><i class="fa-brands fa-tiktok redes"></i></a>
+        </div>
+        <p class="copy"><i class="fa-solid fa-laptop-code"></i> Katherine Vásquez <br> © Todos los derechos reservados</p>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/tienda.js"></script>
+    <script src="js/slider.js"></script>
+
+
+    
+</html>
